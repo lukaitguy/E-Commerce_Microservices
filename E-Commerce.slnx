@@ -1,0 +1,11 @@
+<Solution>
+  <Folder Name="/FrontEnd/">
+    <Project Path="E-Commerce/E-Commerce.csproj" />
+  </Folder>
+  <Folder Name="/Gateway/" />
+  <Folder Name="/Integration/" />
+  <Folder Name="/Services/">
+    <Project Path="E-Commerce.Services.AuthAPI/E-Commerce.Services.AuthAPI.csproj" Id="537bcffa-0d86-454c-8927-5371f090cc66" />
+    <Project Path="E-Commerce.Services.CouponAPI/E-Commerce.Services.CouponAPI.csproj" />
+  </Folder>
+</Solution>

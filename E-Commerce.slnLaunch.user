@@ -1,0 +1,19 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "E-Commerce.Services.CouponAPI\\E-Commerce.Services.CouponAPI.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "E-Commerce\\E-Commerce.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "E-Commerce.Services.AuthAPI\\E-Commerce.Services.AuthAPI.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]
