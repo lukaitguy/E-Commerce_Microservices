@@ -1,4 +1,4 @@
-﻿namespace E_Commerce.Services.AuthAPI.Models.DTOs
+﻿namespace E_Commerce.Models.DTOs
 {
     public class RegisterRequestDTO
     {
