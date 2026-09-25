@@ -44,7 +44,7 @@ namespace E_Commerce.Controllers
             }
             else
             {
-                ModelState.AddModelError("CustomError", result.Message);
+                TempData["error"] = result.Message;
                 return View(dto);
             }
         }
