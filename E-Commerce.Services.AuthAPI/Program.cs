@@ -2,6 +2,8 @@ using E_Commerce.Services.AuthAPI.Data;
 using E_Commerce.Services.AuthAPI.Models;
 using E_Commerce.Services.AuthAPI.Services;
 using E_Commerce.Services.AuthAPI.Services.Interface;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
