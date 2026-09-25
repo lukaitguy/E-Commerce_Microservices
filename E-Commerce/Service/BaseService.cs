@@ -9,16 +9,23 @@ namespace E_Commerce.Service
     public class BaseService : IBaseService
     {
         private readonly IHttpClientFactory _httpClientFactory;
-        public BaseService(IHttpClientFactory httpClientFactory)
+        private readonly ITokenProvider _tokenProvider;
+        public BaseService(IHttpClientFactory httpClientFactory, ITokenProvider tokenProvider)
         {
             _httpClientFactory = httpClientFactory;
+            _tokenProvider = tokenProvider;
         }
-        public async Task<ResponseDto?> SendAsync(RequestDto requestDto)
+        public async Task<ResponseDto?> SendAsync(RequestDto requestDto, bool withBearer = true)
         {
             HttpClient client = _httpClientFactory.CreateClient("E-CommerceAPI");
             HttpRequestMessage msg = new();
             msg.Headers.Add("Accept", "application/json");
             //token
+            if (withBearer)
+            {
+                var token = _tokenProvider.GetToken();
+                msg.Headers.Add("Authorization", $"Bearer {token}");
+            }
 
             msg.RequestUri = new Uri(requestDto.Url);
             if(requestDto != null)
