@@ -75,6 +75,7 @@ namespace E_Commerce.Services.CouponAPI.Controllers
         }
 
         [HttpPost]
+        [Authorize(Roles = "ADMIN")]
         public ResultDto Create([FromBody] CouponDTO couponDto)
         {
             try
@@ -93,6 +94,7 @@ namespace E_Commerce.Services.CouponAPI.Controllers
         }
 
         [HttpPut]
+        [Authorize(Roles = "ADMIN")]
         public ResultDto Update([FromBody] CouponDTO couponDto)
         {
             try
@@ -112,6 +114,7 @@ namespace E_Commerce.Services.CouponAPI.Controllers
 
         [HttpDelete]
         [Route("{id:int}")]
+        [Authorize(Roles = "ADMIN")]
         public ResultDto Delete(int id)
         {
             try
