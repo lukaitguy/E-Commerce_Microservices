@@ -7,5 +7,6 @@
   <Folder Name="/Services/">
     <Project Path="E-Commerce.Services.AuthAPI/E-Commerce.Services.AuthAPI.csproj" Id="537bcffa-0d86-454c-8927-5371f090cc66" />
     <Project Path="E-Commerce.Services.CouponAPI/E-Commerce.Services.CouponAPI.csproj" />
+    <Project Path="E-Commerce.Services.ProductAPI/E-Commerce.Services.ProductAPI.csproj" Id="58125372-7cee-4320-be91-683c0bb21e57" />
   </Folder>
 </Solution>
