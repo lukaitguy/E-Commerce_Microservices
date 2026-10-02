@@ -13,6 +13,10 @@
       {
         "Path": "E-Commerce.Services.AuthAPI\\E-Commerce.Services.AuthAPI.csproj",
         "Action": "Start"
+      },
+      {
+        "Path": "E-Commerce.Services.ProductAPI\\E-Commerce.Services.ProductAPI.csproj",
+        "Action": "Start"
       }
     ]
   }
